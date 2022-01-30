@@ -8,9 +8,16 @@ body {
   }
   
 h1 {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: normal;
     margin-top: 5px;
+	color: mediumseagreen;
+}
+
+li {
+    font-size: 16px;
+    font-weight: normal;
+	color: rgb(226, 15, 43);
 }
 
 
@@ -30,6 +37,7 @@ h2, h3
 	font-family: Cambria, Cochin, Georgia, serif;
 	text-align: center;
 	line-height: 0px;
+	color: rgb(65, 24, 212);
 }
 
 a
@@ -50,18 +58,39 @@ figure
 	text-align: center;
 }
 
-figcaption
+p
 {
-	font-style: italic;
+	color: mediumseagreen;
 }
 
-.center-text
+.center
 {
 	text-align: center;
 }
 
 div {
-    border: 15px solid green;
-    padding: 50px;
+    border: 10px solid green;
+	font-size: 30px;
+    font-weight: normal;
+    padding: 20px;
     margin: 20px;
-  }
+	color: mediumseagreen;
+}
+
+figcaption
+{
+	color: mediumseagreen;
+}
+
+p
+{
+	color: rgb(13, 33, 218);
+	font-size: 25px;
+    font-weight: normal;
+}
+.designed
+{
+	color: rgb(133, 13, 53);
+	font-size: 15px;
+    font-weight: normal;
+}
