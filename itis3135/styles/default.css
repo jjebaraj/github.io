@@ -94,3 +94,34 @@ p
 	font-size: 15px;
     font-weight: normal;
 }
+
+table, th, td {
+	border: 1px solid rgb(180, 16, 16);
+  }
+
+table tr:nth-child(even){
+	background-color: #28269b;
+	color: #e4ece3;
+}
+
+table tr:nth-child(odd){
+	background-color: #71adcf;
+	color: #b62e67;
+}
+table tr:nth-child(1){
+	background-color: #010a0f;
+	color: #b62e67;
+}
+
+.inputfancy{
+	background-color: #79c7f1;
+	color: #18030b;
+	font-size: 16px;
+	font-family: Cambria, Cochin, Georgia, serif;
+}
+
+.buttonfancy
+{
+	background-color: #f17979;
+	color: #e9f0e9;
+}
