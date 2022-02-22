@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph Jebaraj &#166; ITIS 3135  &#166; Golden Frog</title>   
+    <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+    <script src = "scripts/defaultscripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Joseph Jebaraj &#166; ITIS 3135  &#166; Golden Frog</h1>
+            <div>
+                <a href = "index.html">Home</a> |
+                <a href = "introduction.html">Introduction</a> |
+                <a href = "contract.html">Contract</a> |
+                <a href = "tables.html">Tables</a> |
+                <a href = "forms.html">Forms</a> |
+                <a href = "website_evaluations.html">Website Evaluations</a> |
+                <a href = "firstscripts.html">First Scripts</a> |
+                <a href = "polygon.html">Polygon</a>
+            </div>
+        </header>
+        <main>
+            <h2>First Scripts</h2>
+            <br/>
+            <h3 id="dateTime"></h3>
+            <script>
+                document.getElementById('dateTime').innerHTML = Date();
+            </script>    
+            <button type"button" onclick="scriptTest()">Script Test</button> 
+            <h3 id="nameGreeting"></h3>
+            <h3 id="emotionGreeting"></h3>
+
+            <script>
+                
+                var companyName ="The Golden Frog";
+                var userName = prompt("Please enter your name: ");
+                var userEmotion = prompt("Please enter what emotion you are feeling: ");
+                
+                document.getElementById("nameGreeting").innerText = companyName + " welcomes you, " + userName + "!";
+                <br/>
+                document.getElementById("emotionGreeting").innerText = "We are glad you are, " + userEmotion + "!";
+              </script> 
+              <button type"button" onclick="frogYears()">Calculate your age in frog years!!!</button>
+              <p id="frogAge"></p>
+            <script>
+                function frogYears() {
+                    var userAge = prompt("Please enter your age: ");
+                    var frogDiv = 11;
+                    var frogAge = userAge/frogDiv;
+                    frogAge = parseInt(frogAge);
+                    if (frogAge != 0) {
+                        let text = "Your age converted to your age as a frog is: " + frogAge + " years";
+                    document.getElementById("frogAge").innerHTML = text; }
+                   else{
+                    let text = "Your age converted to your age as a frog is: " + frogAge + " months";
+                    document.getElementById("frogAge").innerHTML = text; }
+                   }// end function 1
+            </script>
+          
+            <button type"button" onclick="footballScore()"> Random Football Game Score</button>
+            
+            <p id="Winner"></p>
+            
+            <script>
+               function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+                function footballScore(){
+               var teamAName = prompt("Please enter the Away Team's name: ");
+               teamAName = capitalizeFirstLetter(teamAName);
+                var touchdown = prompt("Please enter " + teamAName + "'s touchdowns scored");
+                var fieldGoal = prompt("Please enter " + teamAName + "'s field goals made");
+                var goldenFrog =  Math.floor(Math.random() * 61);
+                var teamAScore = touchdown*7 + fieldGoal*3;
+               var YES = false;
+             
+           
+                if (goldenFrog > teamAScore) {
+  document.getElementById("Winner").innerHTML = ("Golden Frog beats " + teamAName + " by a score of " + goldenFrog + " to " + teamAScore);
+}// end if
+               
+               else if (teamAScore > goldenFrog) {
+  document.getElementById("Winner").innerHTML = (teamAName + " beats " + "Golden Frog" + " by a score of " + teamAScore + " to " + goldenFrog);
+}
+else {
+document.getElementById("Winner").innerHTML = ("There is a tie");
+}
+                }
+            </script> 
+            <button type"button" onclick="rockPaperScissors()"> Rock Paper Scissors</button>
+
+            <p id="Result"></p>
+            
+            <script>
+            
+            function rockPaperScissors(){
+             var userChoice = prompt("Please enter the Corresponding number for the hand you would like to play: 1.ROCK  2.PAPER  3.SCISSORS");
+             var userChoice = userChoice - 1;
+              //0 = rock
+             //1 = paper
+             //2 = scissors
+            var computerChoice = Math.floor(Math.random() * 3);
+            //ROCK
+            if (userChoice == 0) {
+                            switch(computerChoice) {
+              case 0:
+               document.getElementById("Result").innerHTML = ("You: ROCK CPU: ROCK Result: TIE");
+                break;
+              case 1:
+              document.getElementById("Result").innerHTML = ("You: ROCK CPU: PAPER Result: You Lose :(");
+                break;
+               case 2:
+              document.getElementById("Result").innerHTML = ("You: ROCK CPU: SCISSORS You WIN!!");
+                break;
+              default:
+               document.getElementById("Result").innerHTML = ("Potato");
+            }
+            }
+            //ROCK
+            else if (userChoice == 1) {
+                           switch(computerChoice) {
+              case 0:
+               document.getElementById("Result").innerHTML = ("You: PAPER CPU: ROCK You WIN!!! :(");
+                break;
+              case 1:
+                document.getElementById("Result").innerHTML = ("You: PAPER CPU: PAPER Result: TIE");
+                break;
+              case 2:
+                document.getElementById("Result").innerHTML = ("You: PAPER CPU: SCISSORS Result: You lose :(");
+                break;
+              default:
+                document.getElementById("Result").innerHTML = ("Pizza");
+            }
+            }
+            //ROCK
+            else if (userChoice == 2) {
+                            switch(computerChoice) {
+              case 0:
+               document.getElementById("Result").innerHTML = ("You: SCISSORS CPU: ROCK Result: You lose :(");
+                break;
+              case 1:
+                document.getElementById("Result").innerHTML = ("You: SCISSORS CPU: PAPER You Win!!");
+                break;
+              case 2:
+                document.getElementById("Result").innerHTML = ("You: SCISSORS CPU: SCISSORS Result: TIE");
+                break;
+              default:
+                document.getElementById("Result").innerHTML = ("Pineapple");
+            }
+            }
+            else {
+            document.getElementById("Result").innerHTML = ("Please enter a valid Response");
+            }
+            }//end function
+            </script>
+            <button onclick="maddenTeamRandomizer()">Generate Three Madden Teams</button>
+
+            <p id="teamsGenerated"></p>
+            
+            <script>
+            function maddenTeamRandomizer() {
+            var team1 =  Math.floor(Math.random() * 32);
+            var team2 =  Math.floor(Math.random() * 32);
+            var team3 =  Math.floor(Math.random() * 32);
+             let teamsArray = new Array("Arizona Cardinals", "Baltimore Ravens", "Buffalo Bills", "Chicago Bears", "Carolina Panthers", "Chicago Bears", "Cincinnati Bengals", "Cleveland Browns", "Dallas Cowboys", "Denver Broncos", "Detroit Lions", "Green Bay Packers", "Houston Texans", "Indianapolis Colts","Jacksonville Jaguars", "Washington Redskins", "Tennessee Titans", "Tampa Bay Buccaneers", "Seattle Seahawks", "San Francisco 49ers", "Pittsburgh Steelers", "Philadelphia Eagles", "New York Jets", "New York Giants", "New Orleans Saints", "New England Patriots", "Minnesota Vikings", "Miami Dolphins", "Los Angeles Rams", "Los Angeles Chargers", "Las Vegas Raiders", "Kansas City Chiefs")
+             
+            document.getElementById("teamsGenerated").innerHTML = ("Your Three Madden Teams are: " + teamsArray[team1] + " , " + teamsArray[team2]+ " , " + teamsArray[team3]);
+            }
+            </script>
+            
+<button onclick="cubed()">Cube any number</button>
+
+<p id="Number"></p>
+
+<script>
+    function cubed(){
+ var userNumber = prompt("Please enter the number you would like to cube: ");
+ var cubedNumber = 1;
+cubedNumber = userNumber*userNumber*userNumber;
+document.getElementById("Number").innerHTML = (cubedNumber);
+    }
+</script>
+
+        </main>
+        <footer>
+            <div>
+                <a href = "https://jjebaraj.github.io/">Github.io</a> |
+                <a href = "https://github.com/jjebaraj">Github</a> |
+                <a href = "https://www.codecademy.com/profiles/joeJebaraj9938353131" >Code Cademy</a> |
+                <a href = "https://www.freecodecamp.org/fcc925d9310-7df2-4018-b4c0-bef9f3e396b2">Free Code Camp</a> |
+                <a href = "https://jsfiddle.net/user/eoj34">JS Fiddle</a> |
+                <a href = "https://www.linkedin.com/in/joseph-jebaraj-a644ba160/">LinkedIn</a>  
+            <br/>
+            <p class="designed">
+                <a href="jebarajinc.com/">Designed by Jebaraj Inc.&#169; 2022</a>
+            </p>          
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>    
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+            </p>
+        </div>   
+        </footer>       
+    </body>
+</html>
