@@ -29,18 +29,22 @@
             </script>    
             <button type"button" onclick="scriptTest()">Script Test</button> 
             <h3 id="nameGreeting"></h3>
+            <br>
             <h3 id="emotionGreeting"></h3>
 
             <script>
-                
+                function scriptTest()
+                {
                 var companyName ="The Golden Frog";
                 var userName = prompt("Please enter your name: ");
                 var userEmotion = prompt("Please enter what emotion you are feeling: ");
                 
                 document.getElementById("nameGreeting").innerText = companyName + " welcomes you, " + userName + "!";
-                <br/>
+                
                 document.getElementById("emotionGreeting").innerText = "We are glad you are, " + userEmotion + "!";
+                }
               </script> 
+
               <button type"button" onclick="frogYears()">Calculate your age in frog years!!!</button>
               <p id="frogAge"></p>
             <script>
