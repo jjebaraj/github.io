@@ -2,8 +2,9 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
-    <title>Joseph Jebaraj &#166; ITIS 3135  &#166; Golden Frog &#166; Website Evaluations</title>   
+    <title>Joseph Jebaraj &#166; ITIS 3135  &#166; Golden Frog &#166; Arrays</title>   
     <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
+    <script src="scripts/arrays.js"></script>
 </head>
 <body>
     <header>
@@ -24,30 +25,40 @@
             </div>
         </header>
         <main>
-            <h2>Website Evaluations</h2>
+            <h2>Arrays</h2>
+
+
+            <label for="Person">Select a person:</label>
+
+            <select name="Person" id="Person">
+            <option value="Person1">Person 1</option>
+            <option value="Person2">Person 2</option>
+            <option value="Person3">Person 3 </option>
+            <option value="Person4">Person 4</option>
+            </select>
             <br/>
-        
-            <section>
-            <h3><a href="https://www.reactjs.org">React (www.reactjs.org)</a></h3>
-            <p>React is a JavaScript library for building user interfaces</p>
-            <ul>
-                <li>Contrast: Excellent contrast throughout the page, only changing colors and themes when needing to highlight something</li>
-                <li>Repetition: Key themes are reused throught the site, in a clear and aestheic manner</li>
-                <li>Alignment: Everything is aligned perfectly and I could not find anything that could use improvement</li>
-                <li>Proximity: Everything is easily accessible and grouped accordingly</li>
-            </ul>
-        </section>
-        <br/>
-        <section>
-            <h3><a href="https://www.demanddriveninstitute.com">Demand Driven Institute (www.demanddriveninstitute.com)</a></h3>
-            <p>The company Demand Driven Institute has a model that the company seeks to implement into other businesses</p>
-            <ul>
-                <li>Contrast: This website has so much contrast to the point where it is essentially unusable. The bright yellow,green and red would give most users a migrane</li>
-                <li>Repetition: The repetition is so overused that the box icons with colors take over the page</li>
-                <li>Alignment: The alignment is overall well done except for the occasional random icon scaterred throughout the screen</li>
-                <li>Proximity: There seems to be no pattern for grouping elements </li>
-            </ul>
-        </section>
+            <br/>
+
+            <label>Salary</label>
+                <input type="text" id="salary">
+            <br/>
+            <br/>
+
+            <button type"button" onclick="addSalary()">Add Salary</button> 
+            <button type"button" onclick="displaySalary()">Display Salary</button> 
+            <button type"button" onclick="displayResults()">Display Results</button> 
+
+            <br/>
+
+            <h2 id="Result">
+                <p id="average"></p>
+                <p id="highest"></p>
+            </h2>
+
+            <p id="SalariesDisplay">
+                
+            </p>
+
 
         </main>
         <footer>

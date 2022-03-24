@@ -151,3 +151,32 @@ table tr:nth-child(1){
 	font-size: 40px;
     font-weight: normal;
 }
+
+figure img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 100%;	
+}
+
+.thumbnailListImage {
+	display: block;
+	opacity: 0.4;
+	transition: 0.5s;
+	height: 100px;
+}
+
+.thumbnailList {
+	list-style: none;
+
+	margin: 0;
+	text-align: center;
+}
+
+.thumbnailListItem {		
+	width: 140px;
+	display: inline-block;
+	border: 1px solid rgb(224, 49, 131);	
+	cursor: pointer;
+}
+
