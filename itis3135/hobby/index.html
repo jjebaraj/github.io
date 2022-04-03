@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Joseph Jebaraj &#166; ITIS 3135  &#166; Golden Frog &#166; Hobby Home Page</title>   
+    <style>
+        body {
+    margin: 25px;
+    background-color: #B5D6B2;
+    font-family: arial, verdana;
+    font-size: 14px;
+    margin-left: 150px;
+	margin-right: 150px;
+  }
+  
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 5px;
+	color: mediumseagreen;
+}
+
+li {
+    font-size: 16px;
+    font-weight: normal;
+	color: rgb(112, 6, 107);
+}
+
+
+header, footer{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+main{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h2, h3
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	text-align: center;
+	line-height: 0px;
+	color: rgb(65, 24, 212);
+}
+
+a
+{
+	text-decoration: none;
+	color: lightseagreen;
+	font-weight: bold;
+}
+
+    #menu {
+      text-align: center;
+    }
+    
+    button {
+      display: inline-block;
+    }
+
+    #link-who
+    {
+	    background-color: #e779f1;
+	    color: #e9f0e9;
+    }
+
+    #link-where
+    {
+	    background-color: #f17979;
+	    color: #e9f0e9;
+    }
+
+    #link-who
+    {
+	    background-color: #f17979;
+	    color: #e9f0e9;
+    }
+
+    #link-why
+    {
+	    background-color: #272b5a;
+	    color: #e9f0e9;
+    }
+
+    #link-when
+    {
+	    background-color: #7b79f1;
+	    color: #e9f0e9;
+    }
+
+    #link-how
+    {
+	    background-color: #79f17f;
+	    color: #e9f0e9;
+    }
+     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script>
+
+    $(document).ready(function () {
+        $("#link-when").click(function () {
+            $("#section-when").show();
+            $("#section-who").hide();
+            $("#section-where").hide();
+            $("#section-how").hide();
+            $("#section-why").hide();
+        });
+
+        $("#link-who").click(function () {
+            $("#section-when").hide();
+            $("#section-who").show();
+            $("#section-where").hide();
+            $("#section-how").hide();
+            $("#section-why").hide();
+        });
+
+        $("#link-where").click(function () {
+            $("#section-when").hide();
+            $("#section-who").hide();
+            $("#section-where").show();
+            $("#section-how").hide();
+            $("#section-why").hide();
+        });
+
+        $("#link-how").click(function () {
+            $("#section-when").hide();
+            $("#section-who").hide();
+            $("#section-where").hide();
+            $("#section-how").show();
+            $("#section-why").hide();
+        });
+
+        $("#link-why").click(function () {
+            $("#section-when").hide();
+            $("#section-who").hide();
+            $("#section-where").hide();
+            $("#section-how").hide();
+            $("#section-why").show();
+        });
+    });
+
+    $( window ).on( "load", function() {
+            $("#section-when").show();
+            $("#section-who").hide();
+            $("#section-where").hide();
+            $("#section-how").hide();
+            $("#section-why").hide();
+        });
+
+     </script>
+</head>
+<body>
+    <header>
+        <h1>Joseph Jebaraj &#166; ITIS 3135  &#166; Recreational Sports</h1>
+            
+        </header>
+        <main>
+            <div id="menu">
+                <button id="link-who">My Sports</button>
+                <button id="link-when">Seasons</button>
+                <button id="link-where">On the Court</button>
+                <button id="link-how">Achievements</button>
+                <button id="link-why">Love It</button>
+            </div>
+            <!-- Who section -->            
+            <section id="section-who">
+                <h2>My Sports</h2>
+                <p>Who</p>
+                <figure>
+                    <img src="images/hobby01.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hobby02.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+            </section>
+            <!-- When section -->
+            
+            <section id="section-when">  
+                <h2>Seasons</h2>
+                <p>When</p>             
+                <figure>
+                    <img src="images/hobby03.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hobby04.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+            </section>
+            <!-- Where section -->
+           
+            <section id="section-where">
+                <h2>On the Court</h2>
+                <p>Where</p>
+                <figure>
+                    <img src="images/hobby05.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hobby06.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+            </section>
+            <!-- How section -->
+            
+            <section id="section-how">
+                <h2>Achievements</h2>
+                <p>How</p>
+                <figure>
+                    <img src="images/hobby07.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hobby08.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+            </section>
+            <!-- Why section -->
+            
+            <section id="section-why">
+                <h2>Love It</h2>
+                <p>Love It</p>
+                <figure>
+                    <img src="images/hobby09.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hobby10.jpg" alt="Joe Jebaraj">
+                    <figcaption class = "figcaption">Me, Myself, and I</figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+            <div>
+            <br/>
+            <p class="designed">
+                <a href="../jebarajinc.com/index.html">Designed by Jebaraj Inc.&#169; 2022</a>
+            </p>          
+            <p>
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+                </a>    
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+                </a>
+            </p>
+        </div>   
+        </footer>       
+    </body>
+</html>
