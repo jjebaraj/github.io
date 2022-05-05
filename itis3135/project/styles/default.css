@@ -1,0 +1,182 @@
+body {
+    margin: 25px;
+    background-color: #B5D6B2;
+    font-family: arial, verdana;
+    font-size: 14px;
+    margin-left: 150px;
+	margin-right: 150px;
+  }
+  
+h1 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 5px;
+	color: mediumseagreen;
+}
+
+li {
+    font-size: 16px;
+    font-weight: normal;
+	color: rgb(112, 6, 107);
+}
+
+
+header, footer{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+main{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+h2, h3
+{
+	font-family: Cambria, Cochin, Georgia, serif;
+	text-align: center;
+	line-height: 0px;
+	color: rgb(65, 24, 212);
+}
+
+a
+{
+	text-decoration: none;
+	color: lightseagreen;
+	font-weight: bold;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: mediumseagreen;
+}
+
+figure
+{
+	text-align: center;
+}
+
+p
+{
+	color: mediumseagreen;
+}
+
+.center
+{
+	text-align: center;
+}
+
+div {
+    border: 4px solid green;
+	font-size: 20px;
+    font-weight: normal;
+    padding: 2px;
+    margin: 2px;
+	color: mediumseagreen;
+}
+
+figcaption
+{
+	color: rgb(3, 14, 8);
+	font-size: 15px;
+}
+
+p
+{
+	color: rgb(13, 33, 218);
+	font-size: 14px;
+    font-weight: normal;
+}
+.designed
+{
+	color: rgb(133, 13, 53);
+	font-size: 15px;
+    font-weight: normal;
+}
+
+table, th, td {
+	border: 1px solid rgb(224, 49, 131);
+  }
+
+table tr:nth-child(even){
+	background-color: #01420c;
+	color: #e4ece3;
+}
+
+table tr:nth-child(odd){
+	background-color: #2e9edf;
+	color: #0a0000;
+}
+table tr:nth-child(1){
+	background-color: #010a0f;
+	color: #b62e67;
+}
+
+.inputfancy{
+	background-color: #79c7f1;
+	color: #18030b;
+	font-size: 16px;
+	font-family: Cambria, Cochin, Georgia, serif;
+}
+
+.buttonfancy
+{
+	background-color: #f17979;
+	color: #e9f0e9;
+}
+
+.numberBtn
+{
+	background-color: #9d79f1;
+	color: #e9f0e9;
+	width: 50px;
+	height: 50px;
+}
+
+.operatorBtn
+{
+	background-color: #e92705;
+	color: #e9f0e9;
+	width: 50px;
+	height: 50px;
+}
+.calcDisplay
+{
+	background-color: #020005;
+	color: #e9f0e9;
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+    font-weight: normal;
+}
+
+figure img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	width: 100%;	
+}
+
+.thumbnailListImage {
+	display: block;
+	opacity: 0.4;
+	transition: 0.5s;
+	height: 100px;
+}
+
+.thumbnailList {
+	list-style: none;
+
+	margin: 0;
+	text-align: center;
+}
+
+.thumbnailListItem {		
+	width: 140px;
+	display: inline-block;
+	border: 1px solid rgb(224, 49, 131);	
+	cursor: pointer;
+}
+
