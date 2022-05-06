@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
         // preload the image for each link
         var images = new Array()			
 	for (i = 0; i < 6; i++) {

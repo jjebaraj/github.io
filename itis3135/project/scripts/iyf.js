@@ -1,4 +1,9 @@
-function scriptTest1()
-{
-    alert("This is my script running");
-}
+$(document).ready(function(){
+  $( "#nav" ).menu({position: {at: "left bottom"}});
+
+  $( "#accordion" ).accordion({
+    active: 0,
+    heightStyle: "content",
+    collapsible: true,
+  });
+  });

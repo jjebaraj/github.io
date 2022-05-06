@@ -1,10 +1,10 @@
 body {
-    margin: 25px;
-    background-color: #B5D6B2;
+    margin: 5px;
+    background-color: white;
     font-family: arial, verdana;
     font-size: 14px;
-    margin-left: 150px;
-	margin-right: 150px;
+    margin-left: 15px;
+	margin-right: 15px;
   }
   
 h1 {
@@ -14,16 +14,15 @@ h1 {
 	color: mediumseagreen;
 }
 
-li {
-    font-size: 16px;
-    font-weight: normal;
-	color: rgb(112, 6, 107);
+
+#heading {
+    float: left;
+    border: none;
 }
 
-
 header, footer{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	text-align: center;
 }
 
@@ -69,12 +68,11 @@ p
 }
 
 div {
-    border: 4px solid green;
+    border: none;
 	font-size: 20px;
     font-weight: normal;
     padding: 2px;
     margin: 2px;
-	color: mediumseagreen;
 }
 
 figcaption
@@ -96,67 +94,12 @@ p
     font-weight: normal;
 }
 
-table, th, td {
-	border: 1px solid rgb(224, 49, 131);
-  }
-
-table tr:nth-child(even){
-	background-color: #01420c;
-	color: #e4ece3;
-}
-
-table tr:nth-child(odd){
-	background-color: #2e9edf;
-	color: #0a0000;
-}
-table tr:nth-child(1){
-	background-color: #010a0f;
-	color: #b62e67;
-}
-
-.inputfancy{
-	background-color: #79c7f1;
-	color: #18030b;
-	font-size: 16px;
-	font-family: Cambria, Cochin, Georgia, serif;
-}
-
-.buttonfancy
-{
-	background-color: #f17979;
-	color: #e9f0e9;
-}
-
-.numberBtn
-{
-	background-color: #9d79f1;
-	color: #e9f0e9;
-	width: 50px;
-	height: 50px;
-}
-
-.operatorBtn
-{
-	background-color: #e92705;
-	color: #e9f0e9;
-	width: 50px;
-	height: 50px;
-}
-.calcDisplay
-{
-	background-color: #020005;
-	color: #e9f0e9;
-	width: 50px;
-	height: 50px;
-	font-size: 40px;
-    font-weight: normal;
-}
 
 figure img {
 	display: block;
   	margin-left: auto;
   	margin-right: auto;
-	width: 100%;	
+
 }
 
 .thumbnailListImage {
@@ -180,3 +123,51 @@ figure img {
 	cursor: pointer;
 }
 
+#logo {
+    float: left;
+    width:30%;
+    border: none;
+}
+
+.ui-menu { 
+    overflow: hidden;
+}
+.ui-menu .ui-menu {
+    overflow: visible !important;
+}
+.ui-menu > li { 
+    float: left;
+    display: block;
+    width: auto !important;
+}
+.ui-menu ul li {
+    display:block;
+    float:none;
+}
+.ui-menu ul li ul {
+    left:120px !important;
+    width:100%;
+}
+.ui-menu ul li ul li {
+    width:auto;
+}
+.ui-menu ul li ul li a {
+    float:left;
+}
+.ui-menu > li {
+    margin: 5px 5px !important;
+    padding: 0 0 !important;
+}
+.ui-menu > li > a { 
+    float: left;
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
+.ui-menu .ui-menu-icon { 
+    margin-top: 0.3em !important;
+}
+.ui-menu .ui-menu .ui-menu li { 
+    float:left;
+    display: block;
+}

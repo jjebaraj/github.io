@@ -5,6 +5,11 @@
     <title>Intercom Youth Foundation Kenya Home Page</title>   
     <link href = "styles/iyf.css" type = "text/css" rel = "stylesheet">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.jqplot.js"></script>
+<script type="text/javascript" src="scripts/plugins/jqplot.json2.js"></script>
+<script type="text/javascript" src="scripts/iyfchart.js"></script>
+<script type="text/javascript" src="scripts/slideshow.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/jquery.jqplot.css" />
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="scripts/iyf.js"></script>
   <link href = "http://code.jquery.com/ui/1.9.1/themes/redmond/jquery-ui.css" type = "text/css" rel = "stylesheet">  
@@ -24,43 +29,42 @@
                 </div>
                 <div id="heading">
                     <h1>Intercom Youth Foundation - Kenya</h1>
-                    <p class = "center">Home</p>
+                    <p class = "center">Medical Mission of Compassion</p>
                 </div>
                 <div style="clear: both;border: none;"></div>
             </div>
         </header>
         <main>            
-            
-            <p>Intercom Youth Foundation was founded in 2017 to do 3 types of missions in Kenya.</p>
-
-             <!-- Tabs HTML code -->
-        <div id="accordion">					
-            <h3><a href="#">Medical Mission of Compassion</a></h3>
-            <div id="accordion-1">
-                <p>IYF works to identify needy areas in Kenya lacking in medical facilities and organized a 10 days Medical Mission of 
-                    Compassion. Local qualified doctors are employed to provide completely free medical services to all residents. We have 
-                    conducted this mission in 2017, 2018 and 2019. Medical Mission of Compassion couldn't be conductced during 2020 and 2021, but we are 
-                    planning to conduct during July 2022 in Nyakach, Nyanza Province, Kenya.
-                </p>
-            </div>
-            <h3><a href="#">Free Computer Skill Training</a></h3>
-            <div id="accordion-2">                
-                <p>A lot of High School Graduates in Kenya and unable to afford high tution rates for a college degree. IYF identifes deserving
-                    students and conducts a free computer skill training for them conducted by church members from International Community Church, Apex,
-                    NC, USA. The instructors are professionals employed in the IT field by various companies. They volunteer their time and use 
-                    custom developed training materials to deliver world class job oriented skills to the trainees. Training in conducted in Kisumu, Kenya during 
-                    the month of July.
-                </p>
-                </div>				
-                <h3><a href="#">Nyanza Pastors Bible Conference</a></h3>
-        <div id="accordion-3">
-            <p>A lot of Pastors in Kenya would like to learn more about he Bible and serve their congregrations better. IYF organizes 
-                Nyanza Pastors Bible Conference and provides a day of in-depth training from the Bible by Pastor Joseph B. Jesudaon.
+            <p>
+                Missions Trip 2022: Upcoming from Juy 11 to July 2022 in Pap Onditi, Nyakatch, Nyanza Province.                
             </p>
-        </div>
-        </div>
-<!-- End Tabs HTML code -->
-       
+            <p>
+                Missions Trip 2019: The Lord gave us a very blessed mission trip. 9536 patients were treated. 
+                We couldn’t have done this without God’s help and the volunteers who helped us.                
+            </p>
+            <p>
+                Missions Trip 2018: 5635 patients were treated for free including 61 cataract operations.            
+            </p>
+            <p>
+                Missions Trip 2017: 2720 patients were treated for free.          
+            </p>
+            <div id="chartdiv" style="height:300px;width:300px; "></div>
+
+            <h3>Gallery - Medical Mission of Compassion</h3>
+            <div class="images">
+                
+                <ul class="thumbnailList">
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc1.jpg" alt="Joe Jebaraj"></li>
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc2.jpg" alt="Joe Jebaraj"></li>
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc3.jpg" alt="Joe Jebaraj"></li>
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc4.jpg" alt="Joe Jebaraj"></li>
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc5.jpg" alt="Joe Jebaraj"></li>
+                        <li class="thumbnailListItem"><img class="thumbnailListImage" src="images/mmc6.jpg" alt="Joe Jebaraj"></li>
+                </ul>
+                <figure>
+                    <img id="mainSlideImage" src="images/mmc1.jpg">
+            </figure>
+        </div>        
         </main>
         <footer>
             <div>
@@ -68,7 +72,7 @@
                 <a href = "medical.html">Medical Mission</a> |
                 <a href = "ict.html">ICT Training</a> |
                 <a href = "bibleconference.html">Pastor's Bible Conference</a> |
-                <a href = "about.html">Forms</a>
+                <a href = "about.html">About</a>
             </div>
             <p class="designed">
                 <a href="jebarajinc.com/">Designed by Jebaraj Inc.&#169; 2022</a>
