@@ -42,8 +42,8 @@ h2, h3
 a
 {
 	text-decoration: none;
-	color: lightseagreen;
-	font-weight: bold;
+	color: mediumseagreen;
+
 }
 
 a:hover
@@ -87,12 +87,7 @@ p
 	font-size: 14px;
     font-weight: normal;
 }
-.designed
-{
-	color: rgb(133, 13, 53);
-	font-size: 15px;
-    font-weight: normal;
-}
+
 
 
 figure img {
