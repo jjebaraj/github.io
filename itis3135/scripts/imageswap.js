@@ -12,7 +12,7 @@ $(document).ready(function() {
         $("#image_list a").click(function () {
                 var i = $(this).parent('li').index()
                 $('#image').attr("src", images[i].src);
-                $('#caption').text("James Allison: 1-" + i);
+                $('#caption').text("James Allison: 1-" + (i + 1));
         });
 
     	// get the image URL and caption for each image and animate the caption
