@@ -11,8 +11,15 @@ $(document).ready(function() {
         // set up the event handlers for each link
         $("#image_list a").click(function () {
                 var i = $(this).parent('li').index()
-                $('#image').attr("src", images[i].src);
-                $('#caption').text("James Allison: 1-" + (i + 1));
+                $("#image").hide().fadeIn(1000, function(){
+                        $('#image').attr("src", images[i].src);
+                        $("#image").fadeIn(1000);
+                      });
+                $("#caption").hide().fadeIn(1000, function(){
+                        $('#caption').text("James Allison: 1-" + (i + 1));
+                        $("#caption").fadeIn(1000);
+                      });
+                
         });
 
     	// get the image URL and caption for each image and animate the caption
